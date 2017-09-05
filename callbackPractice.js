@@ -63,6 +63,7 @@ multiply(4, 3, function(answer){
 // If the name does not exist, invoke the callback with false as an argument.
 
   //Code Here
+var contains = (names, string, cb) => names.includes(string) ? cb(true) : cb(false);
 
 
 
