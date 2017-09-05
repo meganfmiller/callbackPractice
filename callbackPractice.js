@@ -49,7 +49,7 @@ last(names, function(lastName){
 // 3. Write a function called multiply that multiplies two numbers. Invoke the callback with the result of the multiplication.
 
   //Code Here
-
+var multiply = (num1, num2, cb) => cb(num1 * num2);
 
 
 multiply(4, 3, function(answer){
