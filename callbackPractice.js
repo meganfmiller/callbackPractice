@@ -95,7 +95,7 @@ uniq(names, function(uniqArr){
 // 6. Write a function called each that takes in an array of names. For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
 
     //Code Here
-
+var each = (arr, cb) => arr.forEach((item,i) => cb(item,i));
 
 
 each(names, function(item, indice){
