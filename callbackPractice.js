@@ -108,7 +108,13 @@ each(names, function(item, indice){
 // When the correct user object is found, invoke the callback with the user object as an argument.
 
 // Code here
-
+function getUserById(arr, string, cb) {
+  return arr.map(function(user,i) {
+    if (arr[i].id === string) {
+      return cb(user);
+    }
+  })
+}
 
 
 var users = [
