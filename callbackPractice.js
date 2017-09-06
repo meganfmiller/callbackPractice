@@ -67,7 +67,6 @@ var contains = (names, string, cb) => names.includes(string) ? cb(true) : cb(fal
 
 
 
-
 contains(names, 'Colt', function(result){
   if(result === true){
     console.log('Colt is in the array');
@@ -82,7 +81,10 @@ contains(names, 'Colt', function(result){
 // Invoke the callback with the modified array as an argument.
 
   //Code Here
-
+var uniq = (arr, cb) => {
+  var newArray = new Set(arr);
+  return cb([...newArray]);
+}
 
 
 uniq(names, function(uniqArr){
